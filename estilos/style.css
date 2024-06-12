@@ -45,9 +45,6 @@ main {
     flex-direction: row;
 }
 
-h1 {
-    
-}
 
 footer {
     text-align: center;
@@ -60,8 +57,4 @@ div.logotipo {
 .logotipo img {
     margin-top: 10px;
     margin-left: 50px;
-}
-
-.img-principal {
-    
 }
