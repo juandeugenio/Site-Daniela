@@ -1,5 +1,5 @@
 @charset "UTF-8";
- 
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -13,6 +13,104 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+    
+    body {
+        max-width: 600px;
+    }
+    
+    header {
+        background: var(--color01);
+        line-height: 25px;
+        color: #fff;
+        font-family: "Comfortaa";
+        font-weight: bolder;
+        padding: 0.5rem 0;
+        justify-content: end;
+        cursor: pointer;
+    }
+
+    header nav {
+        font-size: 15px;
+        max-width: 100%;
+        
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        list-style-type: none;
+    }
+    
+    header nav ul li {
+        max-width: 100%;
+        
+    }
+    
+    header nav ul li:hover {
+        background: #3c3c3c;
+        
+    }
+    
+    header nav ul li a {
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    
+    .inicio {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .inicio img {
+        max-width: 80px;
+        padding-left: 18px;
+        align-items: flex-start;
+    }
+
+    .inicio h1 {
+        font-size: 20px;
+        width: 100%;
+        font-family: "Comfortaa";
+    }
+
+    div.container {
+        display: inline-block;
+    }
+
+    section.background {
+        width: 100%;
+        height: 400px;
+        justify-content: center;
+        border: 2px solid red;
+    }
+
+    .chamada {
+        margin:auto;
+        margin-top: 50px;
+        padding: 20px;
+        width: 450px;
+        border: 2px solid #000;
+        line-height: 35px;
+    }
+
+    .img-principal {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    
+}
+/* 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -136,4 +234,4 @@ footer nav ul li {
 footer nav ul li a {
     color: #fff;
     text-decoration: none;
-}
+} */
