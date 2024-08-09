@@ -64,22 +64,31 @@
     }
     
     .inicio {
-        max-width: 100%;
         display: flex;
+        align-items: center;
+        max-width: 100%;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
+        padding: 10px;
     }
     
     .inicio img {
         max-width: 80px;
         padding-left: 18px;
-        align-items: flex-start;
     }
 
     .inicio h1 {
         font-size: 20px;
         width: 100%;
         font-family: "Comfortaa";
+    }
+
+    .logo {
+        flex: 00 auto;
+    }
+    .logotipo {
+        flex: 1;
+        text-align: center;
     }
 
     div.container {
