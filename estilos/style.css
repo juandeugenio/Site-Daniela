@@ -35,7 +35,6 @@
     header nav {
         font-size: 15px;
         max-width: 100%;
-        
     }
     
     header nav ul {
@@ -57,14 +56,32 @@
     
     header nav ul li a {
         padding: 10px;
+        color: white;
         text-decoration: none;
+        
     }
 
     header nav ul li a:hover {
         color: white;
         text-decoration: underline;
     }
-    
+
+    #menu {
+        display: none;
+    }
+
+    #menu.menu-aberto {
+        display: block;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+
     .inicio {
         display: flex;
         align-items: center;
@@ -95,8 +112,55 @@
         padding-right: 45px;
     }
 
+    .logo-hamburger{
+        text-align: right;
+        align-content: center;
+    }
+
     div.container {
         display: inline-block;
+    }
+
+    .chamada {
+        margin:auto;
+        margin-top: 30px;
+        padding: 20px;
+        width: 450px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .chamada h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 40px;
+        font-weight: 600 ;
+        font-style: italic;
+        margin-bottom: 25px;
+        line-height: 50px;
+    }
+
+    .chamada p { 
+        font-family: "Arial", serif;
+        font-size: auto;
+        font-weight: 600 ;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+
+    button {
+        background: #4b4949;
+        height: 50px;
+        width: 300px;
+        border-radius: 50px;
+        color: white;
+        font-size: 16px;
+        border: none;
+        justify-content: center;
+    }
+
+    .container-2 {
+        text-align: center;
+        color: white;
     }
 
     section.background {
@@ -107,15 +171,6 @@
         padding-top: 30px;
     }
 
-    .chamada {
-        margin:auto;
-        margin-top: 50px;
-        padding: 20px;
-        width: 400px;
-        border: 2px solid #000;
-        line-height: 35px;
-    }
-
     .img-principal {
         display: none;
     }
@@ -123,7 +178,40 @@
         width: 100%;
     }
     
+    .services {
+        background: rgb(78, 57, 57);
+        padding: 2rem 0;
+    }
+
+    .service-list {
+        display: grid;
+        grid-template-columns: no-repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .service-item {
+        background: #fff;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        color: #000;
+    }
+
+    .about {
+        background: #fff;
+        padding: 2rem 0;
+        text-align: center;
+    }
+
+    footer {
+        background-color: #777676;
+    }
+
 }
+
+
 @media (min-width:900px) {
     body {
         font-family: Arial, sans-serif;
@@ -186,6 +274,10 @@
     nav ul li a {
         color: #fff;
         text-decoration: none;
+    }
+
+    .logo-hamburger{
+        display: none;
     }
 
     .intro {
