@@ -259,6 +259,12 @@
         width: 90%;
         margin: 0 auto;
     }
+    
+    .container p {
+        width: 65%;
+        margin: 0 auto;
+        
+    }
 
     .container-2 {
         width: 90%;
@@ -331,11 +337,12 @@
     #botao-inicio {
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #56d856;
         width: 300px;
-        height: 60px;
+        height: 40px;
         padding: 20px;
-        border-radius: 35px;
+        border-radius: 25px;
         border: none;
         font-size: 20px;
         text-align: center;
@@ -398,6 +405,11 @@
         background: rgb(78, 57, 57);
         padding: 2rem 0;
     }
+
+    .services h2 {
+        color: #fff;
+    }
+
 
     .service-list {
         display: grid;

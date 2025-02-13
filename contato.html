@@ -8,13 +8,81 @@
 </head>
 <body>
 
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Contato</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f4f4f4;
+            }
+            .container {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+            }
+            input, textarea, button {
+                width: 100%;
+                margin-top: 10px;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                background: #28a745;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background: #218838;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu Email" required>
+                <textarea id="message" rows="4" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     
+        <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                let name = document.getElementById("name").value;
+                let email = document.getElementById("email").value;
+                let message = document.getElementById("message").value;
+                
+                let mailtoLink = `mailto:seuemail@example.com?subject=Contato de ${name}&body=Nome: ${name}%0D%0AEmail: ${email}%0D%0AMensagem: ${message}`;
+                
+                window.location.href = mailtoLink;
+            });
+        </script>
+    </body>
+    </html>
+    
+
+<!--     
         <form action="index.html" method="post">
             <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
             <p>Sobrenome: <input type="text" name="sobrenome" id="isobrenome"></p>
             <input type="submit" value="Enviar">
         </form>
-        </br>
+        </br> -->
 
         <a href="index.html">voltar</a>
    
